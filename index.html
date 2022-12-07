@@ -88,50 +88,6 @@
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Track FB Pixel Android -->
-    <script>
-        $('#trackAndroid').click(function () {
-            fbq('track', 'Lead', {
-                value: android,
-            });
-        });
-    </script>
-
-    <!-- Track FB Pixel iOS -->
-    <script>
-        $('#trackiOS').click(function () {
-            fbq('track', 'Lead', {
-                value: ios,
-            });
-        });
-    </script>
-
-    <!-- Facebook Pixel Code -->
-    <script>
-        ! function (f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '374944199614559');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=374944199614559&ev=PageView&noscript=1" /></noscript>
-    <!-- End Facebook Pixel Code -->
 </head>
 
 <body>
@@ -177,7 +133,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="mt-130 hidden-sm hidden-xs"></div>
-                        <img src="https://static.guesehat.com/static/static/web_tb/img/tb-splashscreen.png"
+                        <img src="#"
                             class="img-responsive center-block" alt=""
                             style="margin-bottom: 50px; height: 500px; visibility: hidden;">
                     </div>
@@ -187,10 +143,7 @@
         </section>
     </header>
     <!-- End Header -->
-    <section id="home_banner-mobile" class=" visible-sm visible-xs">
-        <img class="img-responsive" style="margin-top: 80px;"
-            src="https://static.guesehat.com/static/static/web_tb/img/Fotolandingpage1.jpg">
-    </section>
+
     <!-- Start About Section -->
     <section id="about" class="padding-50 pt-100">
         <div class="container">
